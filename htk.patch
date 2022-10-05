@@ -1,0 +1,13 @@
+diff --git a/HTKLib/HRec.c b/HTKLib/HRec.c
+index 8323130..0baec25 100644
+--- a/HTKLib/HRec.c
++++ b/HTKLib/HRec.c
+@@ -1647,7 +1647,7 @@ static void LatFromPaths(Path *path,int *ln,Lattice *lat)
+             la->lAlign[i].label=labpr;
+ #ifdef PHNALG
+ 	    /* didn't handle model that allow 0 frame */
+-            if (dur<=0 && labid != splabid) HError(8522,"LatFromPaths: Align have dur<=0 ");
++            if (dur<=0 && labpr != splabid) HError(8522,"LatFromPaths: Align have dur<=0 ");
+ #endif
+             la->lAlign[i].dur=dur;
+             la->lAlign[i].like=like;
