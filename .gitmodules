@@ -1,0 +1,6 @@
+[submodule "htk"]
+	path = htk
+	url = https://github.com/loretoparisi/htk.git
+[submodule "FAVE"]
+	path = FAVE
+	url = https://github.com/stevecassidy/FAVE.git
