@@ -48,5 +48,7 @@ WORKDIR $HOME/FAVE
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
 RUN ~/.poetry/bin/poetry install
 
+# copy our scripts into the container
+COPY ./scripts $HOME/FAVE
 
 CMD ["bash"]
